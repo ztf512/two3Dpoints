@@ -11,6 +11,6 @@ It is solved by SVD. When passing **four or more non-coplanar** 3D point pairs, 
 ## 2. Example: Solving Face Pose
 Use [mediapipe Face Mesh](https://github.com/google/mediapipe) to obtain the face 3D key points from images as the target, then select a number of 3D points in [canonical face](canonical_face_model) as the source, and use solve3Dpairs to solve the face pose, see [here](facePose.py).\
 Use the solved *s*, *R*, *t* to perform rigid transformation on [face_model.obj](canonical_face_model/face_model.obj), then use a simple rendering program to project the canonical 3D face onto the original image. The results are as follows: \
-![result0](images\result\Trump0_result.png)
-![result1](images\result\Trump1_result.png)
-![result2](images\result\Trump2_result.png)
+![result0](images/result/Trump0_result.png)
+![result1](images/result/Trump1_result.png)
+![result2](images/result/Trump2_result.png)

@@ -12,6 +12,6 @@ $$subject\ to\quad R^TR = I,\ det(R) = 1$$
 ## 2. 使用示例——求解人脸姿态角
 使用[mediapipe Face Mesh](https://github.com/google/mediapipe)获取人脸3D关键点target，在[基准人脸](canonical_face_model)中选取若干3D点作为source，利用solve3Dpairs进行求解，见[这里](facePose.py)。\
 利用求解到的*s*、*R*、*t*对[face_model.obj](canonical_face_model/face_model.obj)进行刚性变换，然后利用简易渲染程序将基准3D人脸投影至原图片上，结果如下：\
-![result0](images\result\Trump0_result.png)
-![result1](images\result\Trump1_result.png)
-![result2](images\result\Trump2_result.png)
+![result0](images/result/Trump0_result.png)
+![result1](images/result/Trump1_result.png)
+![result2](images/result/Trump2_result.png)
